@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
+      <PackageReference Include="MediatR" Version="12.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="MediatR" />
+        <Using Include="AutoMapper" />
+        <Using Include="FluentValidation" />
+        <Using Include="MinimalAPIsTalk.WithCustomMediatrLogic.Persistence" />
+        <Using Include="Microsoft.AspNetCore.Mvc" />
+        <Using Include="MinimalAPIsTalk.WithCustomMediatrLogic.Contracts.Attributes.HttpGetAttribute" Alias="HttpGetAttribute" />
+        <Using Include="MinimalAPIsTalk.WithCustomMediatrLogic.Contracts.Attributes.HttpPostAttribute" Alias="HttpPostAttribute" />
+        <Using Include="MinimalAPIsTalk.WithCustomMediatrLogic.Contracts.Attributes.HttpPutAttribute" Alias="HttpPutAttribute" />
+        <Using Include="MinimalAPIsTalk.WithCustomMediatrLogic.Contracts.Attributes.HttpDeleteAttribute" Alias="HttpDeleteAttribute" />
+    </ItemGroup>
+</Project>
